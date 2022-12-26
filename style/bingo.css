@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2{
+	text-align: center;
+}
+
+.filtre{
+	width: 90%;
+	height: 250px;
+}
+
+.joueur{
+	background-color: var(--cont-2-color); 
+	float: left; 
+	margin-right: 0;
+	margin-left: 1%;
+	margin-bottom: 25px;
+	width: 49%;
+}
+.joueur:nth-child(even){
+	margin-right: 1%;
+	margin-left: 0;
+/*	background-color: blue;*/
+}
+.enTete{
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 100px;
+	display: grid;
+    grid-template-areas: "num nom inf";
+    grid-template-columns: 1fr 1fr 1fr;
+	background-color: var(--cont-2-color);
+}
+.numIdJou{
+	grid-area: num;
+	text-align: left;
+}
+.nomJou{
+	grid-area: nom;
+	margin: auto;
+	text-align: center;
+}
+.nomJou input{
+	text-align: center;
+}
+.infoJou{
+	grid-area: inf;
+	text-align: right;
+}
+.cont_Tete{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 100%;
+	transform: translateY(-70%);
+}
+
+.card_content{
+    width: 100%;
+    height: 100%;
+}
+
+.perso{
+	width: 25%;
+	float: left;
+	text-align: center;
+	
+	display: grid;
+    grid-template-areas: 	"img img img"
+                            "img img img"
+                            "img img img"
+							"tit tit tit"
+                            "ser ser ser"
+                            "vue vue vue";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 5em 5em 50px 50px 50px;
+	border: solid 2px var(--body-color);
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--cont-color);
+}
+
+.image{
+	background-color: var(--side-nav);
+	grid-area: img;
+/*
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, cover;
+*/
+}
+.titre{grid-area: tit; font-size: 120%; word-wrap: break-word; position: relative; top: 5px;}
+.serie{grid-area: ser; font-size: 90%; word-wrap: break-word;}
+.vue{grid-area: vue; text-align: left;}
+.id_perso{
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 15px;
+	z-index: 999;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	padding-top: 4px;
+	transform: translateY(50%);
+	background-color: #C32325;
+}

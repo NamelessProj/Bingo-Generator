@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#container{
+	width: 80%;
+	height: 100%;
+	max-width: 1920px;
+	margin: auto;
+	background-color: #222;
+	padding-top: 80px;
+	background-color: var(--cont-color);
+	color: var(--text-color);
+	padding-bottom: 25px;
+}
+
+.input{
+	margin: 6px;
+	padding: 10px;
+	display: block;
+	margin: auto;
+	color: palevioletred;
+	font-size: 30px;
+}
+
+.textNum{
+	color: #fff;
+}
+
+
+
+/* FORMULAIRE */
+
+.inpText, #Modifier, .submit{
+	background: none;
+	border: none;
+	outline: none;
+	
+	background-color: #F3F3F3;
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+	
+	width: 80%;
+	max-width: 600px;
+	padding: 15px;
+	border-radius: 8px;
+	
+	color: #313131;
+	font-size: 20px;
+	margin-right: 5px;
+	
+	transition: 0.4s;
+}
+.inpText::placeholder{
+	color: #AAA;
+}
+.inpText:focus, .inpText:valid, #Modifier:hover, .submit:hover{
+	color: #FFF;
+	background-color: #313131;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+#Modifier, .submit{
+	width: 150px;
+	margin-right: 0px;
+	margin-left: 5px;
+}
+
+
+
+/*	TABLE*/
+
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #111;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+    font-size: bold;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+th {
+    background-color: #696969;
+    color: #fff;
+    font-size: bold;
+}
+
+table {
+/*			width: 95%;*/
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+table tr td img {
+	width: auto;
+    height: auto;
+    max-height: 100px;
+}
